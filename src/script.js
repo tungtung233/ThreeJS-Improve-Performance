@@ -4,6 +4,16 @@ import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
 import Stats from 'stats.js';
 
 /**
+ * You can test your performance by disabling the frame rate limitations in Chrome
+ * By default, Chrome caps fps at 60. 
+ * If you disable that, you should see your fps shoot up significantly (for me, this scene went up to 1300-1400fps)
+ * If after disabling the fps limitations and your fps is only like 70 or 80, then you know your experience has some serious performance issues
+ * But be careful because disabling the fps limitation is really taxing on your computer.
+ * When testing this, you should maximize your browser since smaller windows are easier on the computer
+ * https://gist.github.com/brunosimon/c15e7451a802fa8e34c0678620022f7d
+ */
+
+/**
  * Stats
  */
 const stats = new Stats();
